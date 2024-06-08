@@ -110,3 +110,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     customShowSlide(customCurrentIndex);
 });
+
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const navbarMenu = document.getElementById('navbarMenu');
+
+    hamburgerButton.addEventListener('click', function () {
+        if (navbarMenu.classList.contains('visible')) {
+            navbarMenu.classList.remove('visible');
+            navbarMenu.classList.add('hidden');
+        } else {
+            navbarMenu.classList.remove('hidden');
+            navbarMenu.classList.add('visible');
+        }
+    });
+});
